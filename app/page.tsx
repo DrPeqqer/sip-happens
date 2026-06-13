@@ -1,4 +1,5 @@
 import { ArrowRight, UsersRound } from "lucide-react";
+import Link from "next/link";
 
 import { hasSupabasePublicEnv } from "@/lib/supabase";
 
@@ -56,19 +57,19 @@ export default function Home() {
         </div>
 
         <div className="relative grid gap-4 pb-4 sm:grid-cols-2">
-          <a
-            href="#create"
+          <Link
+            href="/create"
             className="group flex min-h-16 items-center justify-center gap-3 rounded-2xl bg-violetGlow px-6 py-4 text-center text-lg font-black text-white shadow-2xl shadow-violetGlow/25 transition hover:-translate-y-0.5 hover:bg-violet-500"
           >
             Raum erstellen
             <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
-          </a>
-          <a
-            href="#join"
+          </Link>
+          <Link
+            href="/join"
             className="flex min-h-16 items-center justify-center rounded-2xl border border-cyanGlow/40 bg-cyanGlow/10 px-6 py-4 text-center text-lg font-black text-cyan-50 transition hover:-translate-y-0.5 hover:bg-cyanGlow/20"
           >
             Raum beitreten
-          </a>
+          </Link>
         </div>
 
         {!hasSupabase ? (
