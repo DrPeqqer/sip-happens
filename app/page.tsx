@@ -16,7 +16,7 @@ export default function Home() {
               <UsersRound className="h-5 w-5 text-cyanGlow" />
             </div>
             <span className="text-sm font-black uppercase tracking-[0.24em] text-slate-400">
-              Deep Choices
+              Sip Happens
             </span>
           </div>
           <span className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-bold text-slate-300">
@@ -74,7 +74,7 @@ export default function Home() {
 
         {!hasSupabase ? (
           <p className="relative pb-2 text-sm font-semibold text-amber-200">
-            Supabase ist vorbereitet. Setze NEXT_PUBLIC_SUPABASE_URL und NEXT_PUBLIC_SUPABASE_ANON_KEY in Vercel.
+            Supabase ist vorbereitet. Setze NEXT_PUBLIC_SUPABASE_URL und NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY in Vercel.
           </p>
         ) : null}
       </section>
